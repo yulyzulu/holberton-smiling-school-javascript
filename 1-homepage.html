@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./holberton_school-icon/demo-files/demo.css" />
+    <link rel="stylesheet" href="./holberton_school-icon/style.css" />
+    <title>Smile School</title>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="header p-3">
+            <nav class="navbar navbar-expand-sm navbar-dark p-2 p-sm-3">
+                <div class="container">
+                    <button class="navbar-toggler border-0 pl-1" type="button" data-toggle="collapse" data-target="#opciones" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="holberton_school-icon-menu"></span>
+                    </button>
+                    <a class="navbar-brand mx-auto shadow-none" href="#">
+                        <img class="smile-image" src="./images/smile_off.png" alt="smile">
+                        <img src="./images/logo.png" alt="Logo">
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="opciones">
+                        <ul class="navbar-nav ml-sm-auto  text-center">
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold shadow-none" href="#">COURSES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold shadow-none" href="#">PRICING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold shadow-none" href="#">LOGIN</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Hero section -->
+        <section class="mt-5 mb-1 text-center">
+            <h1 class="text-white display-4 font-weight-bold p-4">Get schooled</h1>
+            <div class="d-flex justify-content-center text-white mt-0 mb-2">
+                <div class="m-2">SMILES</div>
+                <div class="m-2">GRIN</div>
+                <div class="m-2">LAUGH</div>
+            </div>
+            <button type="button" class="my-primary-button text-white m-3 mb-5 p-2">REGISTER FOR FREE</button>
+            <h5 class="text-white pt-5"><span class="text-primary-color mt-5 pb-4">Learn</span> from the pros</h5>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="col-6 col-sm-3 text-white text-center">
+                    <img class="rounded-circle w-50" src="./images/profile_1.jpg" alt="Phillip photo">
+                    <p class="font-weight-bold mb-1">Phillip Massey</p>
+                    <p class="font-italic m-0">« Smile of the year »</p>
+                    <p class="font-italic">2018-2019</p>
+                </div>
+                <div class="col-6 col-sm-3 text-white text-center">
+                    <img class="rounded-circle w-50" src="./images/profile_2.jpg" alt="Nannie photo">
+                    <p class="font-weight-bold mb-1">Nannie Lawrence</p>
+                    <p class="font-italic m-0">Best « little smile »</p>
+                    <p class="font-italic">2017</p>
+                </div>
+                <div class="col-6 col-sm-3 text-white text-center">
+                    <img class="rounded-circle w-50" src="./images/profile_3.jpg" alt="Bruce photo">
+                    <p class="font-weight-bold mb-0">Bruce Walters</p>
+                    <p class="font-italic m-0">Best « Friend Smile » </p>
+                    <p class="font-italic">live performance 2019</p>
+                </div>
+                <div class="col-6 col-sm-3 text-white text-center">
+                    <img class="rounded-circle w-50" src="./images/profile_4.jpg" alt="Henry photo">
+                    <p class="font-weight-bold mb-1">Henry Hughes</p>
+                    <p class="font-italic m-0">« 24h smiles » winner</p>
+                    <p class="font-italic">2016-2019</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes section -->
+        <section class="quotes">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="false">
+                <div class="container" >
+                    <div class="carousel-inner" id="quotesContainer">
+                        <div class="loader my-5"></div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev shadow-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next shadow-none" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <!-- Cards -->
+    <section class="bg-white">
+        <h5 class="text-black mt-5 pb-4 text-center">Most <span class="text-primary-color">popular </span>tutorials</h5>
+        <!-- Mobile design -->
+        <div id="carouselExampleControls" class="carousel slide d-block d-md-none" data-ride="carousel" data-pause="false">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video1">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video2">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video3">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video4">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-videos carousel-control-prev shadow-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-videos carousel-control-next shadow-none" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- /Mobile -->
+        <!-- Tablet -->
+        <div id="carouselExampleControls" class="carousel slide d-none d-md-block d-lg-none" data-ride="carousel" data-pause="false">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card my-2 border-0 ">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video1">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video2">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video3">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video4">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-videos carousel-control-prev shadow-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-videos carousel-control-next shadow-none" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- /Tablet -->
+        <!-- Desktop -->
+        <div id="carouselExampleControls" class="carousel slide d-none d-lg-block" data-ride="carousel" data-pause="false">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card my-2 border-0 ">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video1">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video2">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video3">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video4">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card my-2 border-0 ">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video1">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video2">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video3">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video4">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-videos carousel-control-prev shadow-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-videos carousel-control-next shadow-none" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- /Desktop -->
+    </section>
+    <!-- Row of smiles -->
+    <section>
+        <div class="container-fluid smile-section">
+            <h5 class="text-white my-2 pt-5 pb-3 text-center"><span class="text-primary-color">Free </span>membership </h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 text-center p-4 p-lg-2">
+                        <img class="p-2 m-2 w-25" src="./images/smile_on.png" alt="Smile">
+                        <p class="text-white font-weight-bold px-5 p-md-3  p-lg-1 mx-3 mb-1">Lorem ipsum</p>
+                        <p class="text-white p-3 p-lg-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 text-center p-4 p-lg-2">
+                        <img class="p-2 m-2 w-25" src="./images/smile_on.png" alt="Smile">
+                        <p class="text-white font-weight-bold px-5 p-md-3  p-lg-1 mx-3 mb-1">Lorem ipsum</p>
+                        <p class="text-white p-3 p-lg-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 text-center p-4 p-lg-2">
+                        <img class="p-2 m-2 w-25" src="./images/smile_on.png" alt="Smile">
+                        <p class="text-white font-weight-bold px-5 p-md-3  p-lg-1 mx-3 mb-1">Lorem ipsum</p>
+                        <p class="text-white p-3 p-lg-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 text-center p-4 p-lg-2">
+                        <img class="p-2 m-2 w-25" src="./images/smile_on.png" alt="Smile">
+                        <p class="text-white font-weight-bold px-5 p-md-3  p-lg-1 mx-3 mb-1">Lorem ipsum</p>
+                        <p class="text-white p-3 p-lg-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="text-center mb-4">
+                    <button type="button" class="my-primary-button text-white m-3 mb-5 p-2 my-md-5 my-lg-5">REGISTER FOR FREE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest videos -->
+    <section class="bg-white">
+        <h5 class="text-black mt-5 pb-4 text-center"><span class="text-primary-color">Latest </span>videos</h5>
+        <!-- Mobile design -->
+        <div id="carouselExampleControls" class="carousel slide d-block d-md-none" data-ride="carousel" data-pause="false">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video1">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video2">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video3">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-4 my-2 border-0">
+                            <div class="video-element">
+                                <div class="video-background">
+                                    <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video4">
+                                    <div class="video-overlay">
+                                        <img  class="w-75" src="./images/play.png" alt="Play">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                    <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_on.png" alt="Start">
+                                    <img src="./images/star_off.png" alt="Start">
+                                    <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-videos carousel-control-prev shadow-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-videos carousel-control-next shadow-none" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- /Mobile -->
+        <!-- Tablet -->
+        <div id="carouselExampleControls" class="carousel slide d-none d-md-block d-lg-none" data-ride="carousel" data-pause="false">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card my-2 border-0 ">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video1">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video2">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video3">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video4">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-videos carousel-control-prev shadow-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-videos carousel-control-next shadow-none" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- /Tablet -->
+        <!-- Desktop -->
+        <div id="carouselExampleControls" class="carousel slide d-none d-lg-block" data-ride="carousel" data-pause="false">
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card my-2 border-0 ">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video1">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video2">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video3">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video4">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card my-2 border-0 ">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_2.jpg" alt="Video1">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Diagonal Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_3.jpg" alt="Video2">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Sad Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_4.jpg" alt="Video3">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Natural Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card my-2 border-0">
+                                    <div class="video-element">
+                                        <div class="video-background">
+                                            <img class="img-fluid w-100" src="./images/thumbnail_1.jpg" alt="Video4">
+                                            <div class="video-overlay">
+                                                <img  class="w-75" src="./images/play.png" alt="Play">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <p class="card-title text-black font-weight-bold">Happy Smile</p>
+                                        <p class="">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                                        <div class="d-flex align-items-center">
+                                            <img class="rounded-circle w-25 text-left" src="./images/profile_1.jpg" alt="Picture">
+                                            <p class="text-primary-color text-right ml-3">Phillip Massey</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_on.png" alt="Start">
+                                            <img src="./images/star_off.png" alt="Start">
+                                            <p class="text-primary-color pt-3 ml-auto">8 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-videos carousel-control-prev shadow-none" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-videos carousel-control-next shadow-none" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- /Desktop -->
+    </section>
+    <footer class="smile-section">
+        <div  class="container">
+          <div class="row pt-4 pb-2 shadow-none">
+            <div class="col-12 col-md-3 text-center text-md-left mr-md-auto">
+              <img class="smile-image" src="./images/smile_off.png" alt="smile">
+              <img src="./images/logo.png" alt="Logo">
+            </div>
+            <div class="col-12 col-sm-3 justify-content-center d-flex ml-md-auto ">
+              <div class="px-1 shadow-none">
+                <a  href="https://www.facebook.com/HolbertonSchoolColombia/" class="text-white text-decoration-none shadow-none">
+                  <span class="icon holberton_school-icon-ic_facebook icon text-decoration-none"></span>
+                </a>
+              </div>
+              <div class="px-1 shadow-none">
+                <a href="https://twitter.com/" class="text-white text-decoration-none shadow-none">
+                  <span class="icon holberton_school-icon-ic_twitter icon "></span>
+                </a>
+              </div>
+              <div class="px-1 shadow-none">
+                <a href="https://www.instagram.com/" class="text-white text-decoration-none shadow-none">
+                  <span class="holberton_school-icon-ic_instagram"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+              <p class="small text-center text-gray p-1">©smileschool 2020</p>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
