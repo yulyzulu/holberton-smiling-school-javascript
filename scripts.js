@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    let $quotesContainer = $('#quotesContainer');
+    const $quotesContainer = $('#quotesContainer');
+    const $tutorialsCarousel = $('#tutorialsCarousel');
+    const $carouselExample = $('#carouselExample');
 
     function renderQuotes(quotes) {
         quotes.forEach(quote => {
@@ -8,9 +10,54 @@ $(document).ready(function(){
                 .replace(':quote:', quote.text)
                 .replace(':name:', quote.name)
                 .replace(':job title:', quote.title);
-                $quotesContainer.append($(article));
+            $quotesContainer.append($(article));
         });
         $('.carousel-item').eq(0).attr('class', 'carousel-item active');
+    }
+
+    function renderTutorials(tutorials) {
+        tutorials.forEach(tutorial => {
+            let star = tutorial.star;
+            console.log(star)
+            let article = TutorialTemplate.replace(':img:', tutorial.thumb_url)
+                .replace(':img alt:', "Image" + tutorial.id)
+                .replace(':title:', tutorial.title)
+                .replace(':sub title:', tutorial["sub-title"])
+                .replace(':img author:', tutorial.author_pic_url)
+                .replace(':author alt:', tutorial.author + "Picture")
+                .replace(':author name:', tutorial.author)
+                .replace(':star1:', function() {
+                    if (star >= 1) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star2:', function() {
+                    if (star >= 2) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star3:', function() {
+                    if (star >= 3) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star4:', function() {
+                    if (star >= 4) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star5:', function() {
+                    if (star >= 5) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':duration:', tutorial.duration);
+            $tutorialsCarousel.append($(article));
+
+        })
+        if ($carouselExample[0].id == 'carouselExample') {
+            $('#carouselExample .carousel-item').eq(0).attr('class', 'carousel-item col-12 col-md-6 col-lg-3 active');
+        }
     }
 
     let template =  '<div class="carousel-item ">' +
@@ -22,16 +69,90 @@ $(document).ready(function(){
                             '<p class="text-white font-weight-bold mx-sm-5 mx-4 my-0 px-2 py-0">:name:</p>' +
                             '<p class="text-white font-italic mx-sm-5 mx-4 my-0 px-2 py-0">:job title:</p>' +
                         '</div>' +
-                    '</div>'
+                    '</div>';
 
     function getQuotes() {
         $.ajax ({
             url: 'https://smileschool-api.hbtn.info/quotes',
             success: function(data, textStatus, xhr) {
-                $quotesContainer.find('.loader').remove()
-                renderQuotes(data);
+                if ($quotesContainer[0].id == 'quotesContainer') {
+                    $quotesContainer.find('.loader').remove()
+                    renderQuotes(data);
+                }
             }
         })
     }
+
+    let TutorialTemplate = '<div class="carousel-item col-12 col-md-6 col-lg-3 >' +
+                                '<div class="card my-2 border-0 ">' +
+                                    '<div class="video-element">' +
+                                        '<div class="video-background">' +
+                                            '<img class="img-fluid w-100 mx-auto d-block" src=":img:" alt=":img alt:">' +
+                                            '<div class="video-overlay">' +
+                                                '<img  class="w-75" src="./images/play.png" alt="Play">' +
+                                            '</div>' +
+                                        '</div>' +
+                                    '</div>' +
+                                    '<div class="card-body p-1">' +
+                                        '<p class="card-title text-black font-weight-bold">:title:</p>' +
+                                        '<p class="">:sub title:</p>' +
+                                        '<div class="d-flex align-items-center">' +
+                                            '<img class="rounded-circle w-25 text-left" src=":img author:" alt=":author alt:">' +
+                                            '<p class="text-primary-color text-right ml-3">:author name:</p>' +
+                                        '</div>' +
+                                        '<div class="d-flex align-items-center">' +
+                                            '<img src=":star1:" alt="Start">' +
+                                            '<img src=":star2:" alt="Start">' +
+                                            '<img src=":star3:" alt="Start">' +
+                                            '<img src=":star4:" alt="Start">' +
+                                            '<img src=":star5:" alt="Start">' +
+                                            '<p class="text-primary-color small text-center ml-auto">:duration:</p>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>';
+
+    function getTutorials() {
+        $.ajax({
+            url: 'https://smileschool-api.hbtn.info/popular-tutorials',
+            success: function(data, textStatus, xhr) {
+                if ($tutorialsCarousel[0].id == 'tutorialsCarousel') {
+                    $tutorialsCarousel.find('.loader').remove();
+                    renderTutorials(data);
+                }
+            }
+        })
+    };
+
+    function carousel(){
+        if ($carouselExample[0].id == 'carouselExample') {
+            $('#carouselExample').on('slide.bs.carousel', function (e) {
+                var $e = $(e.relatedTarget);
+                var idx = $e.index();
+                var itemsPerSlide = 5;
+                var totalItems = $('.carousel-item').length;
+                // console.log('index' + idx);
+                // console.log('ItemsXslide' + itemsPerSlide);
+                // console.log('Total Items' + totalItems)
+                if (idx >= totalItems-(itemsPerSlide-1)) {
+                    var it = itemsPerSlide - (totalItems - idx);
+                    for (let i = 0; i < it; i++) {
+
+                        if (e.direction=="left") {
+                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                        }
+                        else {
+                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                        }
+                    }
+                }
+            });
+        }
+    };
+
     getQuotes();
+    getTutorials();
+    carousel();
+
 })
+
