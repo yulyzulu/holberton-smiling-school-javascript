@@ -2,6 +2,8 @@ $(document).ready(function(){
     const $quotesContainer = $('#quotesContainer');
     const $tutorialsCarousel = $('#tutorialsCarousel');
     const $carouselExample = $('#carouselExample');
+    const $latestCarousel = $('#latestCarousel');
+    const $CarouselLatestVideos = $('#CarouselLatestVideos');
 
     function renderQuotes(quotes) {
         quotes.forEach(quote => {
@@ -18,7 +20,6 @@ $(document).ready(function(){
     function renderTutorials(tutorials) {
         tutorials.forEach(tutorial => {
             let star = tutorial.star;
-            console.log(star)
             let article = TutorialTemplate.replace(':img:', tutorial.thumb_url)
                 .replace(':img alt:', "Image" + tutorial.id)
                 .replace(':title:', tutorial.title)
@@ -52,11 +53,55 @@ $(document).ready(function(){
                     } else
                         return './images/star_off.png';})
                 .replace(':duration:', tutorial.duration);
-            $tutorialsCarousel.append($(article));
+                $tutorialsCarousel.append($(article));
 
         })
         if ($carouselExample[0].id == 'carouselExample') {
             $('#carouselExample .carousel-item').eq(0).attr('class', 'carousel-item col-12 col-md-6 col-lg-3 active');
+        }
+    }
+
+    function renderLatestVideos(videos) {
+        videos.forEach(video => {
+            let star = video.star;
+            let article = TutorialTemplate.replace(':img:', video.thumb_url)
+                .replace(':img alt:', "Image" + video.id)
+                .replace(':title:', video.title)
+                .replace(':sub title:', video["sub-title"])
+                .replace(':img author:', video.author_pic_url)
+                .replace(':author alt:', video.author + "Picture")
+                .replace(':author name:', video.author)
+                .replace(':star1:', function() {
+                    if (star >= 1) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star2:', function() {
+                    if (star >= 2) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star3:', function() {
+                    if (star >= 3) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star4:', function() {
+                    if (star >= 4) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':star5:', function() {
+                    if (star >= 5) {
+                        return './images/star_on.png';
+                    } else
+                        return './images/star_off.png';})
+                .replace(':duration:', video.duration);
+                $latestCarousel.append($(article));
+        })
+        console.log($CarouselLatestVideos[0].id == 'CarouselLatestVideos')
+        if ($CarouselLatestVideos[0].id == 'CarouselLatestVideos') {
+            $('#CarouselLatestVideos .carousel-item').eq(0).attr('class', 'carousel-item col-12 col-md-6 col-lg-3 active');
         }
     }
 
@@ -150,9 +195,50 @@ $(document).ready(function(){
         }
     };
 
+    function getLatest() {
+        $.ajax({
+            url: 'https://smileschool-api.hbtn.info/latest-videos',
+            success: function(data, textStatus, xhr) {
+                console.log($latestCarousel[0].id == 'latestCarousel')
+                if ($latestCarousel[0].id == 'latestCarousel') {
+                    $latestCarousel.find('.loader').remove();
+                    renderLatestVideos(data);
+                }
+            }
+        })
+    };
+    function carousel2(){
+        console.log($CarouselLatestVideos[0].id == 'CarouselLatestVideos')
+        if ($CarouselLatestVideos[0].id == 'CarouselLatestVideos') {
+            $('#CarouselLatestVideos').on('slide.bs.carousel', function (e) {
+                var $e = $(e.relatedTarget);
+                var idx = $e.index();
+                var itemsPerSlide = 5;
+                var totalItems = $('.carousel-item').length;
+                // console.log('index' + idx);
+                // console.log('ItemsXslide' + itemsPerSlide);
+                // console.log('Total Items' + totalItems)
+                if (idx >= totalItems-(itemsPerSlide-1)) {
+                    var it = itemsPerSlide - (totalItems - idx);
+                    for (let i = 0; i < it; i++) {
+
+                        if (e.direction=="left") {
+                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                        }
+                        else {
+                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                        }
+                    }
+                }
+            });
+        }
+    };
+
     getQuotes();
     getTutorials();
     carousel();
+    getLatest();
+    carousel2();
 
 })
 
