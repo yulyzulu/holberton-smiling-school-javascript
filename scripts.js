@@ -4,6 +4,8 @@ $(document).ready(function(){
     const $carouselExample = $('#carouselExample');
     const $latestCarousel = $('#latestCarousel');
     const $CarouselLatestVideos = $('#CarouselLatestVideos');
+    const $topicItem = $('#topicItem');
+    const $sortByItem = $('#sortByItem');
 
     function renderQuotes(quotes) {
         quotes.forEach(quote => {
@@ -234,11 +236,65 @@ $(document).ready(function(){
         }
     };
 
-    getQuotes();
-    getTutorials();
-    carousel();
-    getLatest();
-    carousel2();
+    function getCoursesInfo() {
+        $.ajax({
+            url: 'https://smileschool-api.hbtn.info/courses',
+            success: function(data, textStatus, xhr) {
+                renderTopic(data.topic, data.topics);
+                renderSort(data.sort, data.sorts);
+            }
+        })
+    };
+
+    let ItemsTemplate = '<option class="dropdown-item shadow-none" value=":val:">:item:</option>'
+    // '<a class="dropdown-item shadow-none" href="#">:item:</a>';
+    // '<option class="dropdown-item shadow-none" value=":item:">:item:</option>'
+
+    //Function to render Topic
+    function renderTopic(name, topics) {
+        $('#topics').html(name);
+        topics.forEach(topic => {
+            let article = ItemsTemplate.replace(':item:', topic).replace(':val:', topic)
+            $('#topics').append($(article));
+        });
+        $("#topics").change(function(){
+            var selectedTopic = $(this).children("option:selected").val();
+            alert("You have selected - " + selectedTopic);
+        });
+    }
+
+    // Function to render Sort
+    function renderSort(name, sorts) {
+        $('#sortItems').html(name)
+        sorts.forEach(e => {
+            let article = ItemsTemplate.replace(':item:', e).replace(':val:', e);
+            $('#sortItems').append($(article));
+        });
+        $('#sortItems').change(function(){
+            var selectedSort = $(this).children("option:selected").val();
+            alert("You have selected - " + selectedSort);
+        });
+    }
+
+    if (document.getElementById('quotesContainer')) {
+        getQuotes();
+    }
+
+    if (document.getElementById('carouselExample')) {
+        //console.log(document.getElementById('carouselExample'))
+        getTutorials();
+        carousel();
+    }
+    if(document.getElementById('CarouselLatestVideos')) {
+        getLatest();
+        carousel2();
+    }
+
+    if (document.getElementById('topicItem')) {
+        getCoursesInfo();
+    }
+
+
 
 })
 
